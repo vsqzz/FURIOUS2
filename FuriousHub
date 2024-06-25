@@ -1,241 +1,32 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+
+
+ 
+
+
+local Rayfield = loadstring(game:HttpGet(MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('LIsAOpiJLoWmDwkxXsUxkrXOSVrKMeGjjlIWJEsXyGcqdoxPwFzbzBwaHR0cHM6Ly9zaXJpdXMubWVudS9yYXlmaWVsZA==')))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Furious",
-   LoadingTitle = "Furious HUB",
-   LoadingSubtitle = "by Kai & Omar",
+   Name = MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('TyYmWLPEvrDnBgacrdkDuTtgQmkxPioLZDRmUFMhRKgGiyhdivtvVRWRnVyaW91cw=='),
+   LoadingTitle = MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('tUQMyAvjIiIBjOfGWuWSdHQUvZFUZHmrSEszExQstQNkdQeVTTetLsORnVyaW91cyBIVUI='),
+   LoadingSubtitle = MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('VcWyJJivbMUUwCuaufsRLAUpwMjfEEHUqdeAlRtSJHDtnKPHOavpDsrYnkgS2FpICYgT21hcg=='),
    ConfigurationSaving = {
       Enabled = true,
       FolderName = FuriosConfig, -- Create a custom folder for your hub/game
-      FileName = "Hub"
+      FileName = MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('SlbQaqSjSzzvmlGawofJJKUtokWWeSxiAvODDeREMBjCopquHUnbJcvSHVi')
    },
    Discord = {
       Enabled = true,
-      Invite = "j53rDjkVda", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      Invite = MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('wDkqrQuHWkhJTsixodoFwUIMcavcOKdkXViyoREZKpvzuKqlwNISpSwajUzckRqa1ZkYQ=='), -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Furious HUB",
-      Subtitle = "Beta v1.0.3",
-      Note = "Join the discord for the key, https://discord.gg/j53rDjkVda",
-      FileName = "KeyLink", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"https://pastebin.com/raw/H9J2HZ0C"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
-   }
-})
-
-local  MainTab = Window:CreateTab("Home", 4483362458) -- Title, Image
-local MainSection = MainTab:CreateSection("Scripts")
-
-Rayfield:Notify({
-   Title = "Executed!",
-   Content = "You Executed it Noob..",
-   Duration = 5,
-   Image = 4483362458,
-   Actions = { -- Notification Buttons
-      Ignore = {
-         Name = "Shut up",
-         Callback = function()
-         print("The user tapped shut up")
-      end
-   },
-},
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Blade Ball",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/Blade.lua"))() 
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Jailbreak",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/BlitzIsKing/UniversalFarm/main/Loader/Regular"))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Demonfall",
-   Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/slightten/ouwHub/main/ouwHub'))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Phantom Forces",
-   Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/4wUBjSxR"))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Arsenal",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/laeraz/midnightcc/main/public.lua"))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Blade Ball Dungeon",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallEvent.lua"))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Anime Ball",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Strongest battlegrounds",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/TSBUtils.lua"))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Doors",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Blox Fruits",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiSupremacy/Loader.xyz/main/Loader.Blurk%20ST%20%3A%20G"))() 
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Anime Defenders (Unsure if works)",
-   Callback = function()
-loadstring(game:HttpGet(('https://pastefy.app/kJbAQg3x/raw'),true))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Gym League",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/x64communist/tupo/main/GymLeague.lua"))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Horrors RNG",
-   Callback = function()
-loadstring(game:HttpGet("https://scriptblox.com/raw/Horrors-RNG-PHOBIA-1-RINNS-HUB-Support-Solara-14329"))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Animal Race",
-   Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/A6112yKY"))() 
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "3008",
-   Callback = function()
-loadstring(game:HttpGet("https://scriptblox.com/raw/3008-2.71-OP-GET-FOOD-5538"))() 
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Every Second You Get 1 WalkSpeed",
-   Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/%5BFREE%20LIMITED%5D%20Every%20Second%20You%20Get%20%2B1%20WalkSpeed'))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Anime Punching Simulator 2",
-   Callback = function()
-loadstring(game:HttpGet("https://scriptblox.com/raw/UPD-3-Anime-Punching-Simulator-2-OP-SCRIPT-NO-KEY-WORKING-SOLARA-14189"))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Anime Max Simulator",
-   Callback = function()
-loadstring(game:HttpGet("https://scriptblox.com/raw/UPD16.4-Anime-Max-Simulator-Script-13517"))()
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Dahood/Dahood modded",
-   Callback = function()
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Rippeed/DaHoodinary/main/chariotsware"))()
-   end,
-})
-
-local  HubsTab = Window:CreateTab("Hubs", 4483362458) -- Title, Image
-local MiscSection = HubsTab:CreateSection("Hubs")
-
-local Button = HubsTab:CreateButton({
-   Name = "Omen Hub",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/mezzopera/Omen-Hub/main/omen_hub.lua"))()
-   end,
-})
-
-local Button = HubsTab:CreateButton({
-   Name = "ScriptMix Hub",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/ScriptMix-Hub"))()
-   end,
-})
-
-local Button = HubsTab:CreateButton({
-   Name = "Lightux Hub",
-   Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/cool83birdcarfly02six/LightuxSolaraSup/main/README.md'))()
-   end,
-})
-
-local Button = HubsTab:CreateButton({
-   Name = "Rinns Hub",
-   Callback = function()
-loadstring(game:HttpGet("https://scriptblox.com/raw/Horrors-RNG-PHOBIA-1-RINNS-HUB-Support-Solara-14329"))()
-   end,
-})
-
-local  MiscTab = Window:CreateTab("Misc", 4483362458) -- Title, Image
-local MiscSection = MiscTab:CreateSection("Universals")
-
-local Button = MiscTab:CreateButton({
-   Name = "Infinite Yield",
-   Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-   end,
-})
-
-local Button = MiscTab:CreateButton({
-   Name = "Hitbox Expander",
-   Callback = function()
-loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Update-script-hitbox-9326"))()
-   end,
-})
-
-local Button = MiscTab:CreateButton({
-   Name = "Sniper",
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Sniper.lua"))()
-   end,
-})
-
-local  CreditsTab = Window:CreateTab("Credits", 4483362458) -- Title, Image
-local CreditsSection = CreditsTab:CreateSection("Info")
-
-local Paragraph = CreditsTab:CreateParagraph({Title = "Discord", Content = "Join the Discord server: https://discord.gg/j53rDjkVda"})
-local Paragraph = CreditsTab:CreateParagraph({Title = "KAI", Content = "Script Hub Creator"})
-local Paragraph = CreditsTab:CreateParagraph({Title = "OMAR", Content = "Discord Server Creator"})
-local Paragraph = CreditsTab:CreateParagraph({Title = "More Info", Content = "Script suggestions? Please tell us in the server! Who knows, we might get a script for your favourite Roblox game."})
+      Title = MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('YNZnnITcFZtuNdBazYjKsqSOAgLOqBQLERdwJifMilLewrSLJJbzofsRnVyaW91cyBIVUI='),
+      Subtitle = MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('hhiNdaaShHOhbSVGkCdxEwWLIgoRxHwMVGWLYJqdsVrYnJtLFagjWBTQmV0YSB2MS4wLjM='),
+      Note = MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('wkyXszsfzWknDuxbLmNXAdAFSIqKiQKkFOntiIQpppuVPjZhRhpuazLSm9pbiB0aGUgZGlzY29yZCBmb3IgdGhlIGtleSwgaHR0cHM6Ly9kaXNjb3JkLmdnL2o1M3JEamtWZGE='),
+      FileName = MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('iLsPsDnVSHgcBneCNMDmgCfwTVMAMQYYNJVlRDRWOWWeLBVeaHfSbMiS2V5TGluaw=='), -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The userMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('uTtVndKrAkGOUIjYCWintPEcklwnUrTrBWKskWpbEblFuswTgLYOeQAcyBrZXkgd2lsbCBiZSBzYXZlZCwgYnV0IGlmIHlvdSBjaGFuZ2UgdGhlIGtleSwgdGhleSB3aWxsIGJlIHVuYWJsZSB0byB1c2UgeW91ciBzY3JpcHQNCiAgICAgIEdyYWJLZXlGcm9tU2l0ZSA9IHRydWUsIC0tIElmIHRoaXMgaXMgdHJ1ZSwgc2V0IEtleSBiZWxvdyB0byB0aGUgUkFXIHNpdGUgeW91IHdvdWxkIGxpa2UgUmF5ZmllbGQgdG8gZ2V0IHRoZSBrZXkgZnJvbQ0KICAgICAgS2V5ID0gew==')https://pastebin.com/raw/H9J2HZ0CMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('piLlDieFbxegNUQHJUxfSECvWAeGDtLtMqmVonxxUWsdbqRPydvjwiDfSAtLSBMaXN0IG9mIGtleXMgdGhhdCB3aWxsIGJlIGFjY2VwdGVkIGJ5IHRoZSBzeXN0ZW0sIGNhbiBiZSBSQVcgZmlsZSBsaW5rcyAocGFzdGViaW4sIGdpdGh1YiBldGMpIG9yIHNpbXBsZSBzdHJpbmdzICg=')helloMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('KJxAhGYUQPIgJKOMLScJivIerYJzaVmYihNrYmtsoThferkRWbAmJmNLA==')key22MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('VgfGsGGkTLKhIpgOhPBwZYSAyvLWBbMlgoXqqSpcOnTKMIJxcfbwmJRKQ0KICAgfQ0KfSkNCg0KbG9jYWwgIE1haW5UYWIgPSBXaW5kb3c6Q3JlYXRlVGFiKA==')HomeMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('IamOtrXXBdzWLWlGwAEerINiAICGKQDvFqlQrPcaHvqluZPZGzhHXVaLCA0NDgzMzYyNDU4KSAtLSBUaXRsZSwgSW1hZ2UNCmxvY2FsIE1haW5TZWN0aW9uID0gTWFpblRhYjpDcmVhdGVTZWN0aW9uKA==')ScriptsMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('AGZxCkpTyWPzGUPcaotdpXzoEaRnMnnJbeJyQhZcblvEijEtXJHEpzUKQ0KDQpSYXlmaWVsZDpOb3RpZnkoew0KICAgVGl0bGUgPSA=')Executed!MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('VQWUOLsqmQPFESbNwUwRtcMVDnQJmWruIvAknERLaoPfxPqpkAezEzcLA0KICAgQ29udGVudCA9IA==')You Executed it Noob..MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('dISxDaTUyWdkhMyHvyDHFjpZJtLNVSwEOfektUFJwypnnWiCxFMSYRYLA0KICAgRHVyYXRpb24gPSA1LA0KICAgSW1hZ2UgPSA0NDgzMzYyNDU4LA0KICAgQWN0aW9ucyA9IHsgLS0gTm90aWZpY2F0aW9uIEJ1dHRvbnMNCiAgICAgIElnbm9yZSA9IHsNCiAgICAgICAgIE5hbWUgPSA=')Shut upMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('dsQgryDyNymUOPnJUplKxSPtJvvmWZxXbnfHnDxbIqMlNXTXjSEYOSQLA0KICAgICAgICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQogICAgICAgICBwcmludCg=')The user tapped shut upMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('AkwKSnHoDKlqzqYREVKtuSZqdkausRIbPPCqBAlxtcnTHRFbvISdeTZKQ0KICAgICAgZW5kDQogICB9LA0KfSwNCn0pDQoNCmxvY2FsIEJ1dHRvbiA9IE1haW5UYWI6Q3JlYXRlQnV0dG9uKHsNCiAgIE5hbWUgPSA=')Blade BallMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('JufTouPLUIlBGeIiXPlguqDnZKtbehltWPmsnZNXyOaVPvzuDqKCpzBLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/Blade.luaMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('zvOcIJPOFhKtSIdnofEtgNenoGIWYhOUjXubHXxrofitceHdjwJEzHiKSkoKSANCiAgIGVuZCwNCn0pDQoNCmxvY2FsIEJ1dHRvbiA9IE1haW5UYWI6Q3JlYXRlQnV0dG9uKHsNCiAgIE5hbWUgPSA=')JailbreakMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('owFXPcUHIjxmtUiICHRYWCuxUlJmGMsUlKZKfXpxhgOTavXmOfpYOMwLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/BlitzIsKing/UniversalFarm/main/Loader/RegularMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('VyycdfjLqPnzcDUavFNLWvIBiAtUNlGNguOdfbAUKaHbxaJuHtCkkppKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')DemonfallMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('mrNJNgtCjXTClloPtvDkIyNjdqVykuayDqCCDejyBJHWTkvmlBcZYdYLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/slightten/ouwHub/main/ouwHubMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('cHZSppOFESMxdXIDPWoKuUiSgqNteSDYieuiJYReFgmiKiyFFrfBgKrKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Phantom ForcesMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('MHpJnqJvfvanteRrMtUtQTfBHKXMvrseiWJFaDpYSWtNKmwiCdbQrgpLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://pastebin.com/raw/4wUBjSxRMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('vHraCzgggbpvOCBvxRnPhvzMNRwglOiUCFDciWuPhtgspDslrUSGOQWKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')ArsenalMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('JfoLvXoeavckkboTFetEaJflAMExtPyKKJPxaQbdFuMpuEnQJKHJUayLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/laeraz/midnightcc/main/public.luaMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('SvKyrscEHKIVWdseZNzSxiJGBrpkbfMaLYWxkRmvApeurycYgCQXUSjKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Blade Ball DungeonMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('xdHxfaJLAJqFZeihDgWCLNrnkAAdzzQoRhdPrqlxWsVYsnUxxasUtbVLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallEvent.luaMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('MflTrFETHgpFKMDlkgYxVhBuctVaKWGZFDEAxqgnbdRGSjcBwwoFrIaKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Anime BallMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('LFkbmIrarrGpSotAXBWpQJHyPNyVpvMEzUTxhdWlDgEqwmsETPgblJiLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.luaMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('svvyAawLIGBFXUWMgHYpMhIOSZXyzHzrcvUIIUkCIuYUGgkFiFJtZdtKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Strongest battlegroundsMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('rrHiFvQVReerhRaQiWTgYgYIKVcoHGznSvmUMmIXMGeoWQNWDALmfRzLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/TSBUtils.luaMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('MPPIqpogfYOrLEhyFodSkZWveprZQeUwQDCZSJlFdJOntcbLGlymqnBKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')DoorsMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('ZqlnBnEfxZHFTrtCdMLkyKfCjIheDTdUdWBnFMoCMgGaBWgsdMcLppSLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.luaMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('lcaJgINLgStMOTskNpjEQiJJNSkPAqwGGJAYGGDxDvWMzKUtZbczXIcKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Blox FruitsMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('yLvsncAKjkOXSsFlEROKePRGVLNqXzEModMWASErrdSErGVRtncEKRmLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/SkibidiSupremacy/Loader.xyz/main/Loader.Blurk%20ST%20%3A%20GMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('QDnprDwLTKDuApJgZVGhTAuBQrIUQdMgSPfvWSipDzIeIVneAuDEPTOKSkoKSANCiAgIGVuZCwNCn0pDQoNCmxvY2FsIEJ1dHRvbiA9IE1haW5UYWI6Q3JlYXRlQnV0dG9uKHsNCiAgIE5hbWUgPSA=')Anime Defenders (Unsure if works)MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('tsFIVLLDZIIxNuOYipSSTGGgLTaZVWQdrZSyZFSOOKUudywGtBlpVCSLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCgo')https://pastefy.app/kJbAQg3x/rawMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('sDnuLaLQqdFlImsdDanEXOVcQjIVBykGeBMwxeUwiDBPXcwFtiNMwzpKSx0cnVlKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Gym LeagueMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('imfOPiFCGjquFtRRWXoOekQCpbbJrXkCVLqLkrWaoOUpmYxFiNFkxCYLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/x64communist/tupo/main/GymLeague.luaMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('nFVJjyAfDaDXZUjXmSdXtWYUskCMGUfKQEAXAbHpmwwEUemJRwEAJvhKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Horrors RNGMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('uOsIQbjERAMtmYHfqIjDXZxgNYxtLMTNaHvpgGAKyRkEuQyEtllHDyQLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://scriptblox.com/raw/Horrors-RNG-PHOBIA-1-RINNS-HUB-Support-Solara-14329MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('MVAPGwVgFItObgIoJWGFCClCbyYybXwfUEUDaKkCvhApsUnAsyIfqfcKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Animal RaceMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('wZwUgGnMXjefVoEMMVOARjUytYfTejOLVLpbJROwcoISBRwNlMxqtKULA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://pastebin.com/raw/A6112yKYMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('NlXiDMPjLtVTqhofCdhezxSkKmJZTwcIRxpiYmPHXXoYzZgtvonWbokKSkoKSANCiAgIGVuZCwNCn0pDQoNCmxvY2FsIEJ1dHRvbiA9IE1haW5UYWI6Q3JlYXRlQnV0dG9uKHsNCiAgIE5hbWUgPSA=')3008MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('FMFAZCqbFmmdTvgkXWvgXrjavvfrBeSdcSoKHNpiunfkvhLPxqLTTGuLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://scriptblox.com/raw/3008-2.71-OP-GET-FOOD-5538MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('IrCeoQRssNWKpVJCkjbsIrmokuuiXFHZZDXLiqgxmiTtZshrekqtdniKSkoKSANCiAgIGVuZCwNCn0pDQoNCmxvY2FsIEJ1dHRvbiA9IE1haW5UYWI6Q3JlYXRlQnV0dG9uKHsNCiAgIE5hbWUgPSA=')Every Second You Get 1 WalkSpeedMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('aGiydIQeENqQgbjMyhcUKwTmqyohxIdSfPpQZEfBZIuyOKvwfalGbFhLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/%5BFREE%20LIMITED%5D%20Every%20Second%20You%20Get%20%2B1%20WalkSpeedMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('MNJdvxKfdfokdpuOPSLoNYzJyrCAWUJZrUFHJVquhyaFlAvAEzVScdDKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Anime Punching Simulator 2MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('fxDQJmyfzuLZUUtswVbRbHCKCdlIszwfdGNOuuaNkwGnPFVNUVeneQULA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://scriptblox.com/raw/UPD-3-Anime-Punching-Simulator-2-OP-SCRIPT-NO-KEY-WORKING-SOLARA-14189MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('LpKtvitDPgamQFvCsyaMcbZHeRRbLACijKFTVIHTDCqtGvuCNObYFmNKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Anime Max SimulatorMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('jZnDsseHyqtpHMmflFfRUDHdrsDxsCFIDCFzgEHcFLUlhEakfeuLmvMLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://scriptblox.com/raw/UPD16.4-Anime-Max-Simulator-Script-13517MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('OHjSoULxmMHdntuiiXrlNRZsOZadTnIkuKOckJBFHjtMMMZhYVfhqptKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Dahood/Dahood moddedMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('whWfZNeMgvRglhyLFAALwgpGVQYxxhKOKUioEVwZnxVEKZFDRtQXAWWLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldEFzeW5jKA==')https://raw.githubusercontent.com/Rippeed/DaHoodinary/main/chariotswareMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('MycBvMHsxrkYiaDzgauFKuGuiKsZcDRlxAegoWXFrqZEQRlrFgYaqfTKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWFpblRhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Sword Training SimulatorMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('IduXXvIFEWqbDOpnjWbJLkNCeCmJUOwjWUzWXxHwCDxcavmiqTUVfRxLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldEFzeW5jKA==')https://pastebin.com/raw/qzXLHdfJMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('ulKAODHeJEKNyYBexTtnHXuXbrKSPIZwIUtlniwwLdvxCbiZBzsyiaPKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgIEh1YnNUYWIgPSBXaW5kb3c6Q3JlYXRlVGFiKA==')HubsMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('bQGGlmpPsSJiFzOynFGdieokQUxUdyJsGZvboqnaSQyUiqLXWSBHkbyLCA0NDgzMzYyNDU4KSAtLSBUaXRsZSwgSW1hZ2UNCmxvY2FsIE1pc2NTZWN0aW9uID0gSHVic1RhYjpDcmVhdGVTZWN0aW9uKA==')HubsMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('sDyeDruNLelJIeEcascxLzkzsYfvmsPdmjaJBXrcCdAgBfDPTDRrnRlKQ0KDQpsb2NhbCBCdXR0b24gPSBIdWJzVGFiOkNyZWF0ZUJ1dHRvbih7DQogICBOYW1lID0g')Omen HubMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('cZGXTzWGQqxozaEnPoPTMeBcnhJJRqhkDLwkElOyJXMhmYYwIwjumRdLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/mezzopera/Omen-Hub/main/omen_hub.luaMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('tWYbYQBNlxjABOnweqSeeeMhvFqzozWEEPthcPjTXvhUkKPspIrOxKvKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gSHVic1RhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')ScriptMix HubMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('UArVzrnLIwbfSQBwUILrbkPUHXXAatbgQuClVCsziDMaRIKSlWULfZgLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/ScriptMix-HubMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('KMQJBYyKQWrUEXhmLmUrnxvqwVLRpBmhbyCdeFOIrajGCqemNYSEJhFKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gSHVic1RhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Lightux HubMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('VkMmuFsrcEECtTZNNBELajiCNxNNNpZoRlZpqhwxelpiUpsmAiFMOLvLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/cool83birdcarfly02six/LightuxSolaraSup/main/README.mdMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('RKSWUwhkSEnZgqeJCqbVsuwYZeRZYWdZkYyXZhoMFHirVBkOfkoQPttKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gSHVic1RhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Rinns HubMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('sEPHZajDNKQsEjAmYSTPdQcPRCoddwKrLdZNMyzbkYvrePkMZRgKRqmLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://scriptblox.com/raw/Horrors-RNG-PHOBIA-1-RINNS-HUB-Support-Solara-14329MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('XOStnZhoCKzCYWGqLLpeHnryGjHcrYbEgOngMTkQUnMbFSteunqsEmkKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgIE1pc2NUYWIgPSBXaW5kb3c6Q3JlYXRlVGFiKA==')MiscMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('iUyiVRzhviEuaTNIchLBqqFJvJYvrrIHNIxrcTiWYoFMxInUxBXOaXkLCA0NDgzMzYyNDU4KSAtLSBUaXRsZSwgSW1hZ2UNCmxvY2FsIE1pc2NTZWN0aW9uID0gTWlzY1RhYjpDcmVhdGVTZWN0aW9uKA==')UniversalsMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('SAtQnVNIwYJSYxejEQcYKTzLTQvgJxgDYqcTjFXWBOKrVOlahANamVPKQ0KDQpsb2NhbCBCdXR0b24gPSBNaXNjVGFiOkNyZWF0ZUJ1dHRvbih7DQogICBOYW1lID0g')Infinite YieldMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('gMQvszLCwwlDRcakUPyynrdmwnVRJQlWijjGYzQuzcWVBVrMnmNmXorLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/sourceMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('kHMhtZGODGcpYWnVnhGBSzYomilKvceMpYVtJAUjUpbAexFqKodnqHrKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWlzY1RhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Infinite YieldMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('qzstZRQLjOboZsqwFYRtqkmQFjQIRVWtsTlSQSuOmEslIxRHcYqrXVBLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/sourceMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('rqynNgLCuUsQQeqASFfmruEXaNtIKnOfFrYgwIMbTfxiTGFSNITnsDPKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWlzY1RhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Hitbox ExpanderMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('CfjOvmzwTZUFlYcrMmSsxPZwPXSwVLONwJYdQhdrbudPyEmVqFVICJxLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://scriptblox.com/raw/Universal-Script-Update-script-hitbox-9326MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('BfZcREqKpGomfHjiXYEYkCDWqGlaxhEvJgAhUxmQKXAwzWQYFsyyQAmKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgQnV0dG9uID0gTWlzY1RhYjpDcmVhdGVCdXR0b24oew0KICAgTmFtZSA9IA==')Rice AdminMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('qzCfHxMyWiDtZHjrBNOnvgVEJVafCBJcubsHncmdgdtuRLYVPpUJoLdLA0KICAgQ2FsbGJhY2sgPSBmdW5jdGlvbigpDQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCg=')https://pastebin.com/raw/fnpvfLR3MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('bVFHCwUEknOclTAfgqUimmHqzWXNHQIuuBcMIUahGMuHjtogkRZNSFrKSkoKQ0KICAgZW5kLA0KfSkNCg0KbG9jYWwgIENyZWRpdHNUYWIgPSBXaW5kb3c6Q3JlYXRlVGFiKA==')CreditsMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('jQPQJKlNXkaaPelQWNatnBGoxvCZqfHXUvoVeJnRVijTGgUhNTIklpxLCA0NDgzMzYyNDU4KSAtLSBUaXRsZSwgSW1hZ2UNCmxvY2FsIENyZWRpdHNTZWN0aW9uID0gQ3JlZGl0c1RhYjpDcmVhdGVTZWN0aW9uKA==')InfoMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('zpVIZouzAxyeryoioinWzXqSOrdAriwVIZVMLdROMSHCjzCyJJxUgKiKQ0KDQpsb2NhbCBQYXJhZ3JhcGggPSBDcmVkaXRzVGFiOkNyZWF0ZVBhcmFncmFwaCh7VGl0bGUgPSA=')DiscordMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('cVdltVrvPrcFImhCaOEiVjzYVpmvISejGXTcHnBTtDiJstnoXRMtSGmLCBDb250ZW50ID0g')Join the Discord server: https://discord.gg/j53rDjkVdaMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('eIaqLNkgNeNHFGRvkFaNKkHCWkHimEnQtspAQGNgmsdJYCsZRIbLKuQfSkNCmxvY2FsIFBhcmFncmFwaCA9IENyZWRpdHNUYWI6Q3JlYXRlUGFyYWdyYXBoKHtUaXRsZSA9IA==')KAIMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('kHGxwBqTeVYqaPukiqbxNGjvEMfnWsnWKasILTzxnOWMlWidNxzcjBbLCBDb250ZW50ID0g')Script Hub CreatorMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('aZfAuZirRSZEuMYeBDeYTiTTGehcbGFkZyoqaEAxABefQLaYjLKbgkhfSkNCmxvY2FsIFBhcmFncmFwaCA9IENyZWRpdHNUYWI6Q3JlYXRlUGFyYWdyYXBoKHtUaXRsZSA9IA==')OMARMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('cGNvJqJpkBvdNDMORdGokxgJMmSEBsnUyWkfbbRxeOntpwFnRBwHfoqLCBDb250ZW50ID0g')Discord Server CreatorMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('xGtImDySLyRNIpOipktVzMFbUOKjrKqXYiSmWKXjkTPhmlFYMmWTGgifSkNCmxvY2FsIFBhcmFncmFwaCA9IENyZWRpdHNUYWI6Q3JlYXRlUGFyYWdyYXBoKHtUaXRsZSA9IA==')PREMIUMMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('clOTAxCTWNoUriPNnDzbNWTuvwYtvCoxZYAiHDQueTDGzEAFnXHMjSQLCBDb250ZW50ID0g')Come buy Furious Premium in our discord server!MSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('MFOcrkNMzRSwkjdbRSYNxcmxIxSnktFnCdPencGJPCCVVZFzfDDHZGLfSkNCmxvY2FsIFBhcmFncmFwaCA9IENyZWRpdHNUYWI6Q3JlYXRlUGFyYWdyYXBoKHtUaXRsZSA9IA==')More InfoMSIHHVdnYdsPTdyZHIPKjbWTXIWonzXMFNNrQSMeOqTNfovvgxCDwqSwYhtmpzcizkMznoCNUPFupiaWn('GWMtBMcEZLNNlkAyksyPsvuPQAhwiRBBfXqDIQjKDfBnqwaxbqWSvcJLCBDb250ZW50ID0g')Script suggestions? Please tell us in the server! Who knows, we might get a script for your favourite Roblox game.'})    

@@ -1,1 +1,361 @@
+local a=loadstring(game:HttpGet'https://sirius.menu/rayfield')()
 
+local b=a:CreateWindow{
+Name="Furious",
+LoadingTitle="Furious Free",
+LoadingSubtitle="by Kai & Omar",
+ConfigurationSaving={
+Enabled=true,
+FolderName=FuriosConfig,
+FileName="Hub"
+},
+Discord={
+Enabled=true,
+Invite="wrpBRH54Qm",
+RememberJoins=false
+},
+KeySystem=true,
+KeySettings={
+Title="Furious HUB",
+Subtitle="Beta v1.0.6",
+Note="Join the discord for the key, https://discord.gg/wrpBRH54Qm",
+FileName="KeyLink",
+SaveKey=false,
+GrabKeyFromSite=true,
+Key={"https://pastebin.com/raw/H9J2HZ0C"}
+}
+}
+
+local c=b:CreateTab("Home",4483362458)
+c:CreateSection"Scripts"
+
+a:Notify{
+Title="Executed!",
+Content="You Executed it Noob..",
+Duration=5,
+Image=4483362458,
+Actions={
+Ignore={
+Name="Shut up",
+Callback=function()
+print"The user tapped shut up"
+end
+},
+},
+}
+
+c:CreateButton{
+Name="Blade Ball",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/Blade.lua")()
+end,
+}
+
+c:CreateButton{
+Name="Jailbreak",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/BlitzIsKing/UniversalFarm/main/Loader/Regular")()
+end,
+}
+
+c:CreateButton{
+Name="SharkBite",
+Callback=function()
+loadstring(game:HttpGet"https://scriptblox.com/raw/STEALTH-SharkBite-2-script-13895")()
+end,
+}
+
+c:CreateButton{
+Name="Eat Slimes to Grow HUGE",
+Callback=function()
+loadstring(game:HttpGet("https://pastebin.com/raw/wMXEPUwP",true))();
+end,
+}
+
+c:CreateButton{
+Name="Parkour Jumping Race",
+Callback=function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/AppleScript001/Parkour_Jumping_Race_Nice/main/README.md"),true))()
+end,
+}
+
+c:CreateButton{
+Name="Demonfall",
+Callback=function()
+loadstring(game:HttpGet'https://raw.githubusercontent.com/slightten/ouwHub/main/ouwHub')()
+end,
+}
+
+c:CreateButton{
+Name="bloxburg",
+Callback=function()
+loadstring(game:HttpGet(" https://raw.githubusercontent.com/harsizcool/bloxburg-auto-farm-unpatched-2024/main/main.lua",true))()
+end,
+}
+
+c:CreateButton{
+Name="Arsenal",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/laeraz/midnightcc/main/public.lua")()
+end,
+}
+
+c:CreateButton{
+Name="Blade Ball Dungeon",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallEvent.lua")()
+end,
+}
+
+c:CreateButton{
+Name="Anime Ball",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua")()
+end,
+}
+
+c:CreateButton{
+Name="Dusty Trip",
+Callback=function()
+loadstring(game:HttpGet"https://scriptblox.com/raw/a-dusty-trip-ROCKET-very-op-script-12870")()
+end,
+}
+
+c:CreateButton{
+Name="Ninja Legends",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Stochalt/HiraganaDev-Hub/main/HiraHub.lua")()
+end,
+}
+
+c:CreateButton{
+Name="ff2",
+Callback=function()
+loadstring(game:HttpGet"https://api.luarmor.net/files/v3/loaders/bc2d4cf963197247f6ad8df82ee73817.lua")()
+end,
+}
+
+c:CreateButton{
+Name="brookhaven rp",
+Callback=function()
+loadstring(game:HttpGet'https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script')()
+end,
+}
+
+c:CreateButton{
+Name="Prison Life",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/MinionRoblox/PRISON-LIFE/main/SCRIPT.lua")()
+end,
+}
+
+c:CreateButton{
+Name="Phantom Forces",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/mezzopera/Omen-Hub/main/omen_hub.lua")()
+end,
+}
+
+c:CreateButton{
+Name="Pet Simulator 99",
+Callback=function()
+loadstring(game:HttpGet'https://zaphub.xyz/Exec')()
+end,
+}
+
+c:CreateButton{
+Name="BedWars",
+Callback=function()
+loadstring(game:HttpGet("https://pastebin.com/raw/CaEDusrX",true))()
+end,
+}
+
+c:CreateButton{
+Name="Business Tycoon",
+Callback=function()
+loadstring(game:HttpGet"https://rawscripts.net/raw/Business-Tycoon-op-3785")()
+end,
+}
+
+c:CreateButton{
+Name="Counter Blox",
+Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/toasty-dev/pissblox/main/solaris_bootstrapper.lua",true))()
+end,
+}
+
+c:CreateButton{
+Name="Build a Boat",
+Callback=function()
+loadstring(game:HttpGet"https://scriptblox.com/raw/Build-A-Boat-For-Treasure-utoFrm-Gold-13684")()
+end,
+}
+
+c:CreateButton{
+Name="Legends Of Speed",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/SkoterScripts/Legends-Of-Speed-Script/main/Script%20For%20Legends%20Of%20Speed.txt")()
+end,
+}
+
+c:CreateButton{
+Name="Strongest battlegrounds",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Tomskix/exware/main/exware-loader")()
+end,
+}
+
+c:CreateButton{
+Name="Doors",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua")()
+end,
+}
+
+c:CreateButton{
+Name="Blox Fruits",
+Callback=function()
+loadstring(game:HttpGet'https://raw.githubusercontent.com/1st-Mars/Annie/main/1st.lua')()
+end,
+}
+
+c:CreateButton{
+Name="Anime Defenders (Unsure if works)",
+Callback=function()
+loadstring(game:HttpGet(('https://pastefy.app/kJbAQg3x/raw'),true))()
+end,
+}
+
+c:CreateButton{
+Name="Gym League",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/x64communist/tupo/main/GymLeague.lua")()
+end,
+}
+
+c:CreateButton{
+Name="Horrors RNG",
+Callback=function()
+loadstring(game:HttpGet"https://scriptblox.com/raw/Horrors-RNG-PHOBIA-1-RINNS-HUB-Support-Solara-14329")()
+end,
+}
+
+c:CreateButton{
+Name="Animal Race",
+Callback=function()
+loadstring(game:HttpGet"https://pastebin.com/raw/A6112yKY")()
+end,
+}
+
+c:CreateButton{
+Name="3008",
+Callback=function()
+loadstring(game:HttpGet"https://scriptblox.com/raw/3008-2.71-OP-GET-FOOD-5538")()
+end,
+}
+
+c:CreateButton{
+Name="Every Second You Get 1 WalkSpeed",
+Callback=function()
+loadstring(game:HttpGet'https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/%5BFREE%20LIMITED%5D%20Every%20Second%20You%20Get%20%2B1%20WalkSpeed')()
+end,
+}
+
+c:CreateButton{
+Name="Anime Punching Simulator 2",
+Callback=function()
+loadstring(game:HttpGet"https://scriptblox.com/raw/UPD-3-Anime-Punching-Simulator-2-OP-SCRIPT-NO-KEY-WORKING-SOLARA-14189")()
+end,
+}
+
+c:CreateButton{
+Name="Anime Max Simulator",
+Callback=function()
+loadstring(game:HttpGet"https://scriptblox.com/raw/UPD16.4-Anime-Max-Simulator-Script-13517")()
+end,
+}
+
+c:CreateButton{
+Name="Dahood/Dahood modded",
+Callback=function()
+loadstring(game:HttpGetAsync"https://raw.githubusercontent.com/Rippeed/DaHoodinary/main/chariotsware")()
+end,
+}
+
+c:CreateButton{
+Name="Sword Training Simulator",
+Callback=function()
+loadstring(game:HttpGetAsync"https://pastebin.com/raw/qzXLHdfJ")()
+end,
+}
+
+local d=b:CreateTab("Hubs",4483362458)
+d:CreateSection"Hubs"
+
+d:CreateButton{
+Name="Omen Hub",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/mezzopera/Omen-Hub/main/omen_hub.lua")()
+end,
+}
+
+d:CreateButton{
+Name="ScriptMix Hub",
+Callback=function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/ScriptMix-Hub")()
+end,
+}
+
+d:CreateButton{
+Name="Lightux Hub",
+Callback=function()
+loadstring(game:HttpGet'https://raw.githubusercontent.com/cool83birdcarfly02six/LightuxSolaraSup/main/README.md')()
+end,
+}
+
+d:CreateButton{
+Name="Rinns Hub",
+Callback=function()
+loadstring(game:HttpGet"https://scriptblox.com/raw/Horrors-RNG-PHOBIA-1-RINNS-HUB-Support-Solara-14329")()
+end,
+}
+
+local e=b:CreateTab("Misc",4483362458)
+e:CreateSection"Universals"
+
+e:CreateButton{
+Name="Infinite Yield",
+Callback=function()
+loadstring(game:HttpGet'https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source')()
+end,
+}
+
+e:CreateButton{
+Name="Infinite Yield",
+Callback=function()
+loadstring(game:HttpGet'https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source')()
+end,
+}
+
+e:CreateButton{
+Name="Hitbox Expander",
+Callback=function()
+loadstring(game:HttpGet"https://scriptblox.com/raw/Universal-Script-Update-script-hitbox-9326")()
+end,
+}
+
+e:CreateButton{
+Name="Rice Admin",
+Callback=function()
+loadstring(game:HttpGet"https://pastebin.com/raw/fnpvfLR3")()
+end,
+}
+
+local f=b:CreateTab("Credits",4483362458)
+f:CreateSection"Info"
+
+f:CreateParagraph{Title="Discord",Content="Join the Discord server: https://discord.gg/wrpBRH54Qm"}
+f:CreateParagraph{Title="KAI",Content="Script Hub Creator"}
+f:CreateParagraph{Title="OMAR",Content="Discord Server Creator"}
+f:CreateParagraph{Title="PREMIUM",Content="Come buy Furious Premium in our discord server!"}
+f:CreateParagraph{Title="More Info",Content="Script suggestions? Please tell us in the server! Who knows, we might get a script for your favourite Roblox game."}
